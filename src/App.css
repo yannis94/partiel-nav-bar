@@ -1,0 +1,19 @@
+:root {
+  --main-color: #fcf8f2;
+  --main-color-contrast: #114d4d;
+  --main-color-contrast-light: #49ada2;
+  --border-radius-card: 25px;
+}
+
+.App {
+  width: 80%;
+  height: 100%;
+  background-color: var(--main-color);
+  padding: 0 10%;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--main-color-contrast);
+}

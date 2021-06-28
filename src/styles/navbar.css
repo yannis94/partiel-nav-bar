@@ -1,0 +1,34 @@
+.tgtg-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#tgtg-navbar-logo {
+    width: 60px;
+}
+
+.tgtg-navbar-list {
+    width: 70%;
+}
+
+.tgtg-navbar-list ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tgtg-navbar-link {
+    color: var(--main-color-contrast);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.link-active {
+    text-decoration: underline var(--main-color-contrast-light) 3px;
+}
+
+.tgtg-navbar-link:hover {
+    text-decoration: underline var(--main-color-contrast-light) 3px;
+}
