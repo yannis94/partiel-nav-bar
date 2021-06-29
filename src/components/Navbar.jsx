@@ -11,7 +11,6 @@ function Navbar() {
 
     function handleMouseEnter(e) {
         while(e.target.tagName !== 'LI') {
-            console.log('oops')
             e.target = e.target.parentElement
         }
         let myObj = {... isOpen}
@@ -21,7 +20,6 @@ function Navbar() {
 
     function handleMouseLeave(e) {
         while (e.target.tagName !== 'LI') {
-            console.log('oops')
             e.target = e.target.parentElement
         }
         let myObj = { ...isOpen }
