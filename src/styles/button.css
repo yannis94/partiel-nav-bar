@@ -1,0 +1,18 @@
+.tgtg-cta {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-align: center;
+    width: fit-content;
+    font-family: var(--font-two);
+    cursor: pointer;
+}
+.tgtg-cta-contrast {
+    background-color: var(--main-color-contrast);
+}
+.tgtg-cta-contrast-light {
+    background-color: var(--main-color-contrast-light);
+}

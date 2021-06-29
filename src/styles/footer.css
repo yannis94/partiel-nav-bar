@@ -40,6 +40,9 @@
     text-transform: uppercase;
     color: var(--font-color);
 }
+.tgtg-footer-content-div li a:hover {
+    color: darkgray;
+}
 
 .tgtg-footer-outlink {
     padding: 50px 0;

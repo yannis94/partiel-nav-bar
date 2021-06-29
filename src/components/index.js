@@ -5,3 +5,6 @@ export { default as Mouvement } from './Mouvement';
 export { default as Blog } from './Blog';
 export { default as Exposition } from './Exposition';
 export { default as Footer } from './Footer';
+export { default as Button } from './Button';
+export { default as Card } from './Card';
+export { default as CardSmall } from './CardSmall';

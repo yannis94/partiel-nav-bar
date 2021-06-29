@@ -28,7 +28,7 @@ export default function Footer () {
                 <div className="tgtg-footer-content-div">
                     <h3>Mentions légales</h3>
                     <ul>
-                        <li><a href="#">Conditions générales d'utilisation</a></li>
+                        <li><a href="#">Conditions générales<br />d'utilisation</a></li>
                         <li><a href="#">Politique de confidentialité</a></li>
                         <li><a href="#">Utilisation de cookies</a></li>
                     </ul>
