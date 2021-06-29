@@ -8,3 +8,4 @@ export { default as Footer } from './Footer';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as CardSmall } from './CardSmall';
+export { default as CardArticle } from './CardArticle';

@@ -1,0 +1,40 @@
+.tgtg-cardarticle {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 13px 36px 0 #eadfd1;;
+}
+
+.tgtg-cardarticle-top {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+}
+.tgtg-cardarticle-bottom {
+    width: 100%;
+    height: 60%;
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tgtg-cardarticle-theme {
+    font-size: 18px;
+    color: var(--main-color-contrast-light);
+    font-family: var(--font-two);
+}
+
+.tgtg-cardarticle-title {
+    font-size: 20px;
+    color: var(--main-color-contrast);
+    font-family: var(--font-one);
+    margin: 0 15px;
+}

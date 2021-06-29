@@ -89,6 +89,26 @@ p {
   align-items: center;
 }
 
+.tgtg-quote {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mouvement_page .tgtg-section:first-child .tgtg.card {
+  width: 40%;
+  background-size: contain;
+}
+
+.tgtg-blog-section {
+    width: 100%;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 450px);
+    gap: 25px;
+}
+
+
 @media screen and (max-width: 800px) {
   .tgtg-section {
     flex-direction: column;
@@ -101,5 +121,10 @@ p {
   }
   .tgtg-section .tgtg-section-content {
     width: 100%;
+  }
+
+  .tgtg-blog-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(20,350px);
   }
 }
