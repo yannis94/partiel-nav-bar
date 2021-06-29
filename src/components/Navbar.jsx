@@ -1,5 +1,5 @@
 import { Link, withRouter } from "react-router-dom";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/navbar.css'
 
 function Navbar() {
@@ -9,10 +9,20 @@ function Navbar() {
         'pacte': false
     })
 
+    const [noChange, setNoChange] = useState(false)
+    const [menu, setMenu] = useState()
+
+    useEffect(() => {
+        setMenu(document.querySelector(".tgtg-navbar-list ul"))
+    }, [noChange])
+
     const [burgerOpen, setBurgerOpen] = useState(false)
+
     
     function handleClick(e) {
+        
         if (burgerOpen) {
+            document.querySelector(".tgtg-navbar-list").appendChild(menu)
             document.querySelector(".tgtg-nav-buger-background").style.animation = "slide reverse 1s"
             setBurgerOpen(false)
             setTimeout(() => {
@@ -21,13 +31,14 @@ function Navbar() {
             }, 1000);
         }
         else {
+            let mobileMenu = menu
             setBurgerOpen(true)
-            let newMenu = document.querySelector(".tgtg-navbar-list").cloneNode(true)
-            newMenu.id = "tgtg-menu-mobile"
-            newMenu.classList.remove("tgtg-navbar-list")
-            newMenu.querySelector("#reseau").addEventListener("mouseenter", handleMouseEnter)
-            newMenu.querySelector("#reseau").addEventListener("mouseleave", handleMouseLeave)
-            document.querySelector(".tgtg-nav-buger-background").appendChild(newMenu)
+            document.querySelector(".tgtg-navbar-list ul").remove()
+            mobileMenu.id = "tgtg-menu-mobile"
+            mobileMenu.classList.remove("tgtg-navbar-list")
+            mobileMenu.querySelector("#reseau").addEventListener("mouseenter", handleMouseEnter)
+            mobileMenu.querySelector("#reseau").addEventListener("mouseleave", handleMouseLeave)
+            document.querySelector(".tgtg-nav-buger-background").appendChild(mobileMenu)
 
             setTimeout(() => {
                 document.querySelector(".tgtg-nav-buger-background").style.marginLeft = "0"
