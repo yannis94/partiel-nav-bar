@@ -38,7 +38,7 @@ export default function Footer () {
                 </div>
             </div>
             <div className="tgtg-footer-outlink">
-                <img id="tgtg-navbar-logo" src={"https://toogoodtogo.fr/images/logo/econ-textless.svg"} />
+                <img className="tgtg-logo" src={"https://toogoodtogo.fr/images/logo/econ-textless.svg"} />
                 <ul>
                     <li>
                         <div className="tgtg-social-link">

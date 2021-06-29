@@ -5,7 +5,9 @@
   --font-color: #212529;
   --border-radius-card: 25px;
 }
-
+body {
+  overflow-x: hidden;
+}
 .App {
   width: 80%;
   height: 100%;
@@ -16,11 +18,13 @@
 h1 {
   font-size: 80px;
   font-weight: bold;
+  text-transform: uppercase;
   color: var(--main-color-contrast);
 }
 
 h2 {
   font-size: 60px;
+  text-transform: uppercase;
   color: var(--main-color-contrast-light);
 }
 

@@ -9,7 +9,34 @@ function Navbar() {
         'pacte': false
     })
 
+    const [burgerOpen, setBurgerOpen] = useState(false)
+    
+    function handleClick(e) {
+        if (burgerOpen) {
+            document.querySelector(".tgtg-nav-buger-background").style.animation = "slide reverse 1s"
+            setBurgerOpen(false)
+            setTimeout(() => {
+                document.querySelector("#tgtg-menu-mobile").remove()
+                document.querySelector(".tgtg-nav-buger-background").style.marginLeft = "100%"
+            }, 1000);
+        }
+        else {
+            setBurgerOpen(true)
+            let newMenu = document.querySelector(".tgtg-navbar-list").cloneNode(true)
+            newMenu.id = "tgtg-menu-mobile"
+            newMenu.classList.remove("tgtg-navbar-list")
+            newMenu.querySelector("#reseau").addEventListener("mouseenter", handleMouseEnter)
+            newMenu.querySelector("#reseau").addEventListener("mouseleave", handleMouseLeave)
+            document.querySelector(".tgtg-nav-buger-background").appendChild(newMenu)
+
+            setTimeout(() => {
+                document.querySelector(".tgtg-nav-buger-background").style.marginLeft = "0"
+            }, 1000);
+        }
+    }
+
     function handleMouseEnter(e) {
+        console.log("enter")
         while(e.target.tagName !== 'LI') {
             e.target = e.target.parentElement
         }
@@ -29,8 +56,8 @@ function Navbar() {
 
     return (
         <div className="tgtg-navbar">
-            <Link to="/">
-                <img id="tgtg-navbar-logo" src={"https://toogoodtogo.fr/images/logo/econ-textless.svg"} />
+            <Link id="tgtg-navbar-logo" to="/">
+                <img className="tgtg-logo" src={"https://toogoodtogo.fr/images/logo/econ-textless.svg"} />
             </Link>
             <div className="tgtg-navbar-list">
                 <ul>
@@ -98,6 +125,19 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
+            {burgerOpen ? 
+                <div className="burger-close" onClick={handleClick}>
+                    <div></div>
+                    <div></div>
+                </div>
+                :
+                <div className="tgtg-nav-burger" onClick={handleClick}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            }
+            <div className={burgerOpen ? "tgtg-nav-buger-background pannel_slide" : "tgtg-nav-buger-background"}></div>
         </div>
     )
 }
