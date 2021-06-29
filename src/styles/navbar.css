@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    background-color: var(--main-color);
 }
 
 #tgtg-navbar-logo {
@@ -21,8 +22,13 @@
 .tgtg-navbar-link {
     color: var(--main-color-contrast);
     font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
+}
+
+.link-orange {
+    color: #e6640c;
 }
 
 .link-active {

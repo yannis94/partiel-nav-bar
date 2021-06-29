@@ -2,6 +2,7 @@
   --main-color: #fcf8f2;
   --main-color-contrast: #114d4d;
   --main-color-contrast-light: #49ada2;
+  --font-color: #212529;
   --border-radius-card: 25px;
 }
 
@@ -16,4 +17,15 @@ h1 {
   font-size: 80px;
   font-weight: bold;
   color: var(--main-color-contrast);
+}
+
+h2 {
+  font-size: 60px;
+  color: var(--main-color-contrast-light);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: bold;
 }

@@ -31,7 +31,7 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link className={window.location.pathname === "/exposition" ? `tgtg-navbar-link link-active` : "tgtg-navbar-link"} to="/exposition">
+                        <Link className={window.location.pathname === "/exposition" ? `tgtg-navbar-link link-orange link-active` : "tgtg-navbar-link link-orange"} to="/exposition">
                             Exposition
                         </Link>
                     </li>

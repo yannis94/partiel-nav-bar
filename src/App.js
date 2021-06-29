@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Navbar, Home, Professionnels, Blog, Exposition, Mouvement } from './components'
+import { Navbar, Home, Professionnels, Blog, Exposition, Mouvement, Footer } from './components'
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route path="/blog" exact component={() => <Blog />} />
           <Route path="/exposition" exact component={() => <Exposition />} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
