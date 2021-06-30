@@ -81,3 +81,16 @@
 .tgtg-footer-outlink-appimg {
     width: 100px;
 }
+
+@media screen and (max-width: 800px) {
+    .tgtg-footer-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .tgtg-footer-outlink {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -110,6 +110,22 @@ p {
 
 
 @media screen and (max-width: 800px) {
+  #root {
+    width: 100%;
+  }
+  .App {
+    width: 90%;
+    padding: 0 5%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
   .tgtg-section {
     flex-direction: column;
     justify-content: space-between;
